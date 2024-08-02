@@ -1,0 +1,48 @@
+
+//練習自訂格線系統 （未使用也未載入）
+
+$gap:12px;
+$col-num:12;
+
+.container{
+    max-width: 1320;
+    padding-left: $gap/2;
+    padding-right: $gap/2;
+}
+
+.row{
+    display: flex;
+    padding-left: -($gap/2);
+    padding-right: -($gap/2);
+}
+
+@for $i from 1 through $col-num{
+    .col-#{$i}{
+        width: 100% * ($i/$col-num);
+        padding-left: $gap/2;
+        padding-right: $gap/2;
+    } 
+}
+
+@include pad{
+    @for $i from 1 through $col-num{
+        .col-md-#{$i}{
+            width: 100% * ($i/$col-num);
+            padding-left: $gap/2;
+            padding-right: $gap/2;
+        } 
+    }
+}
+
+@include mobile{
+    @include pad{
+        @for $i from 1 through $col-num{
+            .col-sm-#{$i}{
+                width: 100% * ($i/$col-num);
+                padding-left: $gap/2;
+                padding-right: $gap/2;
+            } 
+        }
+    }
+}
+

@@ -1,0 +1,87 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", "思源黑體";
+    font-weight: 300;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1296px;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+.ml-auto{
+    margin-left: auto;
+}
+.mt-auto{
+    margin-top: auto;
+}
+
+.mb-auto{
+    margin-bottom: auto;
+}
+
+
+.bg-primary{
+    background-color:$primary;
+}
+
+.bg-secondary{
+    background-color: $secondary;
+
+}
+
+.bg-dark{
+    background-color:$dark;;
+}
+
+.bg-white{
+    background-color: $white;
+}
+
+.bg-light{
+    background-color:$light;
+}
+
+.c-primary{
+    color: #AA0601;
+}
+.c-light{
+    color: #FBF2F2;
+}
+.c-dark{
+    color: #000000;
+}
+
+.c-white{
+    color: #ffff;
+}
+
+.c-secondary{
+    color: #650300;
+}

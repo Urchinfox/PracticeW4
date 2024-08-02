@@ -1,0 +1,147 @@
+.article{
+    margin-top: 24px;
+    margin-bottom: 80px;
+}
+
+.content{
+    width: 50%;
+    margin-right: 24px;
+    @include mobile{
+        width: 100%;
+        padding-left:13px;
+    }
+}
+
+.content-header{
+
+    .content-title h1{
+        font-size: 48px;
+        line-height: 1.5;
+        @include mobile{
+            font-size: 24px;
+        }
+    }
+    .filter-tag{
+        margin: 8px 0;
+    }
+    .filter-tag span{
+        font-size: 24px;
+        font-weight: normal;
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+
+}
+
+.content-title{
+    margin-bottom: 16px;
+}
+
+.content-title p{
+    font-size: 24px;
+    @include mobile{
+        font-size: 16px;
+    }
+}
+
+
+
+.content-body{
+    .frase{
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+    .frase img{
+        margin-bottom: 8px;
+    }
+}
+
+.content-footer{
+    .footer-share{
+        border-bottom: 1px solid #707070;
+        padding: 16px 0;
+        margin-bottom: 24px;
+    }
+    
+    .footer-share p{
+        margin-right: 16px;
+        font-weight: bold;
+    }
+    .footer-share i{
+        font-size: 16px;
+    }
+    .footer-share i:hover{
+        color:$light;
+    }
+    
+    .footer-pages{
+        justify-content: space-between;
+    }
+    @include mobile{
+        display: none;
+    }
+    .prev,.next{
+        position: relative;
+    }
+    // .prev,.next:hover{
+    //     border-bottom: solid 1px $primary;
+    // }
+    .prev:hover .border-effect::after{
+        width: 100%;
+    }
+
+    .next:hover .border-effect::before{
+        width: 100%;
+    }
+    .border-effect::before{
+        content: "";
+        display: block;
+        width: 0px;
+        height: 2px;
+        background: #000;
+        position:absolute;
+        top: 100%;
+        left: 0;
+        transition-duration: .3s;
+    }
+    .border-effect::after{
+        content: "";
+        display: block;
+        width: 0px;
+        height: 2px;
+        background: #000;
+        position:absolute;
+        top: 100%;
+        right: 0;
+        transition-duration: .3s;
+    }
+
+}
+
+.tag{
+    width: 50%;
+
+    &-title{
+        font-size:32px;
+    }
+    &-group{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    &-group a:hover{
+        position: relative;
+        top: 3px;
+        left: 3px;
+    }
+    
+    &-group a{
+        margin-right: 24px;
+        font-weight: bold;
+    }
+
+    @include mobile{
+        display: none;
+    }
+}
+

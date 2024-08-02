@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <section class="station">
+      <div class="container mx-auto">
+          <h2 class="title">門市據點</h2>
+          <form action="" class="filter">
+              <label for="choices">選擇分店</label>
+              <select name="choices" id="choices">
+                  <option value="taipei-1">台北中山旗艦店</option>
+                  <option value="taipei-2">台北綠園店</option>
+                  <option value="Taichung">台中清水旗艦店</option>
+                  <option value="Kaohsiung1">高雄中正形象店</option>
+                  <option value="Kaohsiung2">高雄夢時代店</option>
+              </select>
+          </form>    
+
+          <div class="shop-info d-flex">
+                  <div class="station-card-box">
+                      <div class="station-card">
+                          <div class="station-card-top">
+                              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/store-1.png?raw=true" alt="...">
+                              <h2>台北中山旗艦店</h2>
+                          </div>
+                          <div class="station-card-bottom">
+                              <div class="station-card-bottom-txt">
+                                  <p><i class="fa-solid fa-phone"></i>電話：(02)000-1234</p>
+                                  <p><i class="fa-regular fa-clock"></i>營業時間：10:00-21:00</p>
+                                  <p><i class="fa-solid fa-location-dot"></i>地址：台北市中山區南京東路25巷2-1號</p>
+                              </div>
+                              <!-- <div class="station-card-btn bg-dark"><a class="c-white" href="station-taipei-1.html">詳細資訊</a></div> -->
+                          </div>
+                      </div>
+                  </div>
+                  <div class="map">
+                  <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.839512366084!2d144.96315761531764!3d-37.81362797975161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577446e2f6d8b12!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1615641671296!5m2!1sen!2sau"
+                      width="100%"
+                      height="414"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy">
+                   </iframe>
+                  </div>
+          </div>
+
+
+      </div>
+
+  </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

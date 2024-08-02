@@ -1,3 +1,330 @@
-.index-title {
-  font-size: 20px;
+/* banner --------------------------------- */
+
+.banner{
+  background-image:url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true) ;
+  background-size: cover;
+
+  &-content{
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    height: 787px;
+    @include mobile{
+      height: 396px;
+    }
+  }
+
+  &-h2{
+    font-size: 64px;
+    padding: 16px 0;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+
+  &-h3{
+    font-size: 36px;
+    @include mobile{
+      font-size: 16px;
+    }
+  }
+
+  &-btn{
+    margin-top: 4px;
+    padding: 6px 12px;
+    transition-duration: .3s;
+  }
+
+  &-btn:hover{
+    background: $light;
+    color: $primary;
+  }
+  @include mobile{
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true);
+
+  }
+
+}
+
+/* feature --------------------------------- */
+
+.feature{
+  &-content{
+    padding:80px 0;
+  }
+
+  &-title{
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+
+  &-ul{
+    margin-top: 24px;
+    @include mobile{
+      display: block;
+    }
+  }
+
+  &-li{
+    width: 25%;
+    @include mobile{
+      width: 100%;
+    }
+  }
+
+  &-card{
+    text-align: center;
+    margin: 0 12px;
+  }
+
+  &-card-header img{
+    padding: 16px;
+  }
+
+  &-card-body{
+    line-height: 1.5;
+  }
+
+  &-card-body h2{
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bolder;
+  }
+
+  &-card-body p{
+    text-align: left;
+  }
+
+}
+
+/* classical ------------------------------- */
+
+.classical{
+  &-title{
+    font-size: 48px;
+    padding-top: 80px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  &-body{
+    margin-top: 48px;
+    margin-bottom: 80px;
+  }
+
+  &-ul{
+    @include mobile{
+      display: block;
+    }
+  }
+
+
+  &-li{
+    text-align: center;
+    /* padding-right: 24px; */
+    width: 33.333%;
+    @include mobile{
+      width: 100%;
+    }
+  }
+
+  &-li h3{
+    margin-top: 8px;
+    font-size: 3vw;
+    font-weight: bold;
+    font-style: italic;
+    @include mobile{
+      font-size: 48px;
+    }
+  }
+
+}
+
+/* sub-banner--------------------------------- */
+
+.sub-banner{
+  height: 608px;
+  background-size: cover;
+  background-position: center;
+
+  @include mobile{
+    height: 820px;
+  }
+
+  &-title{
+    font-size: 48px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+
+  &-ul{
+    @include mobile{
+      display: block;
+    }
+  }
+
+  &-li p{
+    padding:8px 0;
+    font-style: italic;
+  }
+
+  &-li{
+    width: 50%;
+    @include mobile{
+      width: 100%;
+      padding-bottom: 24px;
+      background-size: contain;
+    }
+  }
+
+  &-li{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+}
+
+/* recommendation ---------------------------- */
+.recom{
+  &-title{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 48px;
+    @include mobile{
+      font-size: 24px;
+    }
+  }
+
+  &-ul{
+    padding-bottom: 80px;
+    @include mobile{
+      display: block;
+    }
+  }
+  &-li{
+    width: 25%;
+    @include mobile{
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+  
+  &-card{
+    margin:0 12px;
+    border: 1px solid #DEE2E6;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    @include mobile{
+      width: 348px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &-card-text{
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    line-height: 1.5;
+  }
+  .time{
+    color:#707070;
+    font-size: 14px;
+  }
+
+  .card-img{
+    @include mobile{
+      text-align: center;
+    }
+  }
+  
+}
+
+/* contact -------------------------------------- */
+
+.contact{
+  &-form{
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  &-form p{
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  &-title{
+    padding-top: 80px;
+    padding-bottom: 48px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  &-input{
+    display: flex;
+    flex-direction: column;
+    max-width: 636px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align-last: left;
+    margin-bottom: 16px;
+  }
+  
+  &-input .input{
+    outline: none;
+    border: 1px solid #000000;
+    height: 36px;
+    background: transparent;
+  }
+  &-input textarea{
+    background: transparent;
+  }
+  &-submit{
+    .contact-btn{
+      padding: 16px 176px;
+    }
+    .contact-btn:hover{
+      background: $light;
+      color: $primary;
+      transition-duration:.3s;
+    }
+  }
+
+
+
+  label{
+    margin-bottom: 8px;
+  }
+  
+  textarea{
+    max-width: 636px;
+    padding-bottom: 136px;
+  }
+
+  @include mobile{
+    padding: 0 13px;
+  }
+}
+
+
+
+
+
+@media (max-width:576px){
+  /* banner------------------------ */
+
+
+
+
 }
