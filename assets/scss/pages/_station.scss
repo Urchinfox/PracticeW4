@@ -74,6 +74,10 @@
             font-size: 19px;
         }
     }
+    &-card-btn:hover {
+        background: $primary;
+        transition-duration: .3s;
+    }
     
     &-card-btn a{
         display: block;
