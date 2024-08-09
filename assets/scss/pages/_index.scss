@@ -299,6 +299,11 @@
       color: $primary;
       transition-duration:.3s;
     }
+    @include mobile{
+      .contact-btn{
+        padding: 16px 108px;
+      }
+    }
   }
 
 
@@ -317,14 +322,3 @@
   }
 }
 
-
-
-
-
-@media (max-width:576px){
-  /* banner------------------------ */
-
-
-
-
-}
